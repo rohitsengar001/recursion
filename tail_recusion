@@ -1,0 +1,23 @@
+/*
+@author : Rohit Sengar 
+#language : C
+===========================================================================================================================================
+Tail Recursion : Recursive call said to be tail recursive if recursive call done at the last of funtion.In a tail recusion,No need to keep 
+to store previous state.
+===========================================================================================================================================
+*/
+#include<stdio.h>
+void main()
+{
+ fun(5);
+}
+void fun(int n)
+{
+ if(n==0)
+  return;
+ else
+  {
+    printf("%d ",n);
+    fun(n-1);//recursive calling
+  }
+}
